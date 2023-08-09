@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import AuthPage from './components/AuthPage';
+import HomePage from './pages/home/HomePage';
+// import AuthPage from './components/AuthPage';
 
 function App() {
   return (
     <div className="App">
-    <AuthPage/>
-     
+    {/* <AuthPage/> */}
+     <HomePage/>
     </div>
   );
 }
