@@ -16,7 +16,8 @@
     justify-content: space-around;
 
    
-   img{
+   .logo{
+    max-width: 100%;
     margin-top: 15px;
     margin-left: 5rem;
     width: 82px;
@@ -30,7 +31,7 @@
         display: flex;
          margin: 28px 0 0 50px;
 
-         li{
+         .header-list{
             padding-right: 3rem;
             font-size: 1rem;
             font-weight: 500;
@@ -58,7 +59,7 @@
     background-color: #fff;
     border: 1px solid  #F6F8FF;
     margin-top: 15px;
-    margin-right: 6rem;
+
 
 
     img{
@@ -72,5 +73,53 @@
    }
 
    }
+
+   .dropdownprofile{
+    position: absolute;
+     z-index: 99;
+    width: 120px;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: white;
+    border: 1px solid gray;
+   }
+
+
 }
+
+@media (max-width : 768px){
+  .container{
+    width: 100%;
+
+
+
+    .logo{
+      width: 100px;
+      height: 100%;
+      margin-left:20rem;
+    }
+
+
+    ul .header-list{
+      display: none;
+    }
+
+  }
+
+  .right-side h4{
+    display: none;
+    
+ .container .right-side  .image{
+  margin-right: 1rem;
+ }
+
+
+ 
+
+  }
+
+  
+}
+
+
 

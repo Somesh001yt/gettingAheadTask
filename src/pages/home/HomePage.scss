@@ -1,0 +1,35 @@
+.home-heading {
+  display: flex;
+  margin-top: 7rem;
+  padding: 0.5rem;
+
+  .feature-content {
+    h1 {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      margin-right: 2.5rem;
+      padding-top: 0.5rem;
+      padding-left: 2rem;
+    }
+  }
+
+ 
+
+    li {
+      height: 50px;
+    }
+
+    .active {
+      background-color: #e5ecff;
+      border-radius: 16px;
+      box-sizing: border-box;
+     width: max-content;
+     padding: 10px;
+    }
+  
+}
+
+
+
+
+

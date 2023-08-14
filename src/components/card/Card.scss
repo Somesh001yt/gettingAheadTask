@@ -6,7 +6,57 @@
     box-sizing: border-box;
     margin-left: 40px;
     margin-bottom: 10px;
-    display: inline-block;
+   
+
+  .second-container{
+   position: relative;
+
+  .card-icon{
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .option-icon{
+   background-color: #FFFFFF;
+   border-radius: 50%;
+   width: 3.5rem;
+   height: 3.5rem;
+   position: absolute;
+   top:1rem ;
+   left: 1.6rem;
+   
+
+   img{
+     margin-top: 1rem; 
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+  }
+
+  .option-icon:hover{
+   transform: scale(1.1);
+  }
+
+
+  .bookmark-icon{
+   background-color: #FFFFFF;
+   border-radius: 50%;
+   width: 3.5rem;
+   height: 3.5rem;
+   position: absolute;
+   top:1rem ;
+   left: 15rem;
+  }
+
+  img{
+   margin-top: 1rem; 
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  }
+
 
  .image{
     width: 329px;
@@ -14,4 +64,22 @@
     border-radius:  24px 24px 0 0;
  }
 
+
+ .card-heading{
+   margin-left: 1rem;
+   font-size: 1.5rem;
+    line-height: 2rem; 
+    font-weight: 500;
+    margin-top: 2rem;
+
+ }
+
+ .card-details{
+   margin-top:4px ;
+   display: flex;
+
 }
+   }
+
+ 
+

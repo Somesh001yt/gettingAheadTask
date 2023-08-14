@@ -1,13 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import HomePage from './pages/home/HomePage';
-// import AuthPage from './components/AuthPage';
+
+import "./App.css";
+import HomePage from "./pages/home/HomePage";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+
+import ProfileInfo from "./components/ProfileInfo/ProfileInfo";
 
 function App() {
   return (
-    <div className="App">
-    {/* <AuthPage/> */}
-     <HomePage/>
+    <div>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/profile-info" element={<ProfileInfo/>} />
+      </Routes>
     </div>
   );
 }
