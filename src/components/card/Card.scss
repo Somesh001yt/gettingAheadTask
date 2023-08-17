@@ -1,6 +1,6 @@
 .card-container{
-    width: 329px;
-    height: 571px;
+    width: 26.6rem;
+    height: 35.6rem;
     background-color: #FFFFFF;
     border-radius: 8px;
     box-sizing: border-box;
@@ -46,7 +46,7 @@
    height: 3.5rem;
    position: absolute;
    top:1rem ;
-   left: 15rem;
+   right: 3rem;;
   }
 
   img{
@@ -59,8 +59,8 @@
 
 
  .image{
-    width: 329px;
-    height: 264px;
+    width: 26.6rem;
+    height: 16.5rem;
     border-radius:  24px 24px 0 0;
  }
 
@@ -81,5 +81,32 @@
 }
    }
 
+
+   @media  (max-width:1000px) {
+    .card-container{
+      width: 22rem;
+    }
+
+    .image{
+      width: 22rem;
+    }
+   }
+
  
+
+   @media screen and (max-width:600px) {
+    .card-container{
+      width: 20.5rem;
+      flex-shrink: 0;
+     
+
+      .bookmark-icon{
+      left: 15rem;
+       }
+
+      .image{
+        width: 20.5rem;
+      }
+    }
+   }
 

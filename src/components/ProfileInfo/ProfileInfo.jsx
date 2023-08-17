@@ -1,15 +1,14 @@
 import React from "react";
 import "./ProfileInfo.scss";
-import Header from "../header/Header";
+
 import InputField from "../InputField";
 import Input from "../Input";
-import Footer from "../Footer";
-import tech from "../Tags";
+import Techpage from "../tech/Techpage";
+
 
 const ProfileInfo = () => {
   return (
     <div>
-      <Header />
       <div className="profile-container">
         <div className="back-btn">
           <ion-icon
@@ -31,14 +30,14 @@ const ProfileInfo = () => {
           <Input label="Username" name="username" width="w-[58%]" type="text" />
 
           <div className="mt-10 mx-auto ">
-            <p className="ml-5 lg:ml-0 text-sm">Gender</p>
-            <div className="mt-4 ml-5 lg:ml-0">
+            <p className="ml-5 md:ml-10 lg:ml-0 text-sm">Gender</p>
+            <div className="mt-4 ml-5 md:ml-10 lg:ml-0">
               <input type="radio" name="male" id="" />
               <label className="ml-2" htmlFor="male">
                 Male
               </label>
             </div>
-            <div className="mt-1 mb-6 ml-5 lg:ml-0 ">
+            <div className="mt-1 mb-6 ml-5 md:ml-10 lg:ml-0 ">
               <input type="radio" name="female" id="" />
               <label className="ml-2" htmlFor="female">
                 Female
@@ -68,17 +67,8 @@ const ProfileInfo = () => {
           </div>
 
           <h4 className="mt-6  ml-5 lg:ml-0">Tags</h4>
-          <div className="w-[90%]  mx-auto lg:mx-0 md:w-[90%] lg:w-[62%] h-full  rounded-2xl relative mt-2 bg-primary p-2 ">
-            {tech.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className="bg-gray w-[90px] h-[34px] ml-1 rounded-2xl  mt-3 inline-block"
-                >
-                  <p className="pt-2 pl-7 text-sm">{item.heading}</p>
-                </div>
-              );
-            })}
+          <div className="w-[90%]  mx-auto lg:mx-0 md:w-[90%] lg:w-[62%]  h-full  rounded-2xl relative mt-2 bg-primary p-2 ">
+         <Techpage/>
           </div>
 
           <div className="flex mt-10 ml-6 mb-5">
@@ -97,8 +87,6 @@ const ProfileInfo = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

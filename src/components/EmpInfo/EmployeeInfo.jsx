@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Pencil from "../../assests/pencil.png";
 import Apple from "../../assests/Q76DPRQ3Ix0.png";
 import Linkedin from "../../assests/linkedin.png";
@@ -9,28 +9,18 @@ import Mail from "../../assests/envelope.png";
 
 
 import "./EmployeeInfo.scss";
+import EditEmployee from "./EditEmployee";
+import Techpage from "../tech/Techpage";
 
-
-const tech = [
-  {
-    heading: "tech",
-  },
-  {
-    heading: "tech",
-  },
-  {
-    heading: "tech",
-  },
-  {
-    heading: "tech",
-  },
-  {
-    heading: "tech",
-  },
-  
-];
 
 const EmployeeInfo = () => {
+
+  const [openprofile, setOpenprofile] = useState(false);
+  const closeDropdown = () =>{
+    console.log('click')
+    setOpenprofile((prev) => !prev)
+  }
+
   return (
     <div className="emp-container">
       <div className="flex justify-between mx-auto">
@@ -41,6 +31,7 @@ const EmployeeInfo = () => {
           className=" mt-10 mr-10 object-contain overflow-hidden"
           src={Pencil}
           alt="pen"
+          onClick={() => setOpenprofile((prev) => !prev)}
         />
       </div>
 
@@ -81,19 +72,10 @@ const EmployeeInfo = () => {
         tablet computer, audio players, smartphones, and <br /> software.One of
         the pioneers in the fiel...
       </p>
-      <div className="ml-8">
-        {tech.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className="bg-gray w-[67px] h-[34px] ml-1 rounded-2xl  mt-6 inline-block"
-            >
-              <p className="pt-2 pl-5 text-sm">{item.heading}</p>
-            </div>
-          );
-        })}
-      </div>
-   
+
+      <Techpage />
+      
+      {openprofile && <EditEmployee  closeFunction={()=>closeDropdown()} />}
     </div>
   );
 };

@@ -1,0 +1,27 @@
+.editemp-container {
+  width: 90%;
+  height: 100%;
+  margin: 0px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+
+  .backbtn {
+    display: flex;
+    color: #2196f3;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.employer-heading{
+    margin-top: 40px;
+    margin-left: 47px;
+    font-size: 1.4rem;
+    color: #193D59;
+    font-weight: 500;
+  }
+}

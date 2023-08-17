@@ -13,19 +13,19 @@
     }
   }
 
- 
+  
 
     li {
       height: 50px;
-    }
+  }
 
-    .active {
-      background-color: #e5ecff;
-      border-radius: 16px;
-      box-sizing: border-box;
-     width: max-content;
-     padding: 10px;
+  .nav-link {
+    color: blue;
+    &.inactive {
+      color: black;
     }
+  }
+
   
 }
 

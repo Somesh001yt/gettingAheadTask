@@ -2,18 +2,24 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 
-const DropdownProfile = () => {
-    const [openprofile, setOpenprofile] = useState(false);
+
+const DropdownProfile = (props) => {
+
 
   return (
-    <div className='flex flex-col dropdownprofile  top-16 right-10 lg:right-40'>
+    <div className='flex flex-col dropdownprofile  top-20 right-10 lg:right-28'>
       <ul className='flex flex-col gap-4'>
         <li>
           <NavLink to="/profile-info" activeClassName="active-link">
             Edit Profile
           </NavLink>
         </li>
-        <li onClick={() => console.log('work')} >Cancel</li>
+        <li>
+        <NavLink to="/profile-page" activeClassName="active-link">
+          Profile Page
+        </NavLink>
+        </li>
+        <li onClick={() => props.closeFunction()}  >Cancel</li>
       </ul>
       
     </div>

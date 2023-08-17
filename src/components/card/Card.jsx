@@ -42,7 +42,7 @@ const Card = (props) => {
           <p>
             views: <span className="text-base text-[#151C21]">325</span>
           </p>
-          <p className="mr-4">Posted today</p>
+          <p className="mr-4">{props.posted}</p>
           
         </div>
       </div>

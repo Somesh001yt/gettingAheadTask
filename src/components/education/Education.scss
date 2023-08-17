@@ -1,0 +1,262 @@
+.education-container {
+  width: 90%;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 50px 0px rgba(238, 241, 248, 0.5);
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+
+  .education-heading {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+
+    h4 {
+      color: #193d59;
+      font-size: 1.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      margin-left: 6rem;
+    }
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 4rem;
+      object-fit: contain;
+    }
+  }
+
+  .education-content {
+    border-bottom-left-radius: 40px;
+    display: flex;
+    gap: 15rem;
+    border-bottom: 1px solid #dbe5f0;
+    width: 90%;
+    position: relative;
+    margin-left: 2.2rem;
+
+    .leftedu-content {
+      display: flex;
+
+      .option-img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        position: absolute;
+        top: 18%;
+        right: -70px;
+      }
+
+      .cllg-img {
+        margin-top: -8px;
+
+        flex-shrink: 0;
+      }
+
+      .cllg-details {
+        margin-top: 35px;
+
+        h6 {
+          font-size: 1.125rem;
+          font-weight: 600;
+          line-height: 150%;
+        }
+
+        .subject {
+          color: #8e979e;
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 150%;
+        }
+
+        .education-date {
+          color: #8e979e;
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+
+  .rightedu-content {
+    display: flex;
+    gap: 12rem;
+    margin-top: 2.2rem;
+
+    .rightside-details {
+      display: flex;
+      flex-direction: column;
+
+      .grade {
+        display: flex;
+
+        h6 {
+          font-size: 0.875rem;
+          font-weight: 500;
+          line-height: 150%;
+        }
+
+        p {
+          color: #8e979e;
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 150%;
+          margin-left: 6px;
+        }
+      }
+
+      .subject {
+        display: flex;
+        margin-top: 15px;
+
+        h6 {
+          font-size: 0.875rem;
+          font-weight: 500;
+          line-height: 150%;
+        }
+
+        p {
+          color: #8e979e;
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 150%;
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  .education-container .rightedu-content {
+    gap: 8rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .education-container {
+    .education-heading img {
+      margin-right: 2.2rem;
+    }
+
+    .rightedu-content {
+      gap: 4rem;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .education-container {
+    .education-heading img {
+      margin-right: 1.2rem;
+    }
+
+    .education-content {
+      gap: 9rem;
+    }
+
+    .rightedu-content {
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .education-container {
+    .education-heading {
+      h4 {
+        margin-left: 2rem;
+      }
+    }
+
+    .education-content {
+      gap: 9rem;
+
+      .leftedu-content {
+        .cllg-img {
+          margin-left: -60px;
+        }
+
+        .cllg-details {
+          margin-left: -45px;
+        }
+
+        .option-img {
+          top: 22%;
+          right: -29px;
+        }
+      }
+    }
+
+    .rightedu-content {
+      margin-left: -54px;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .education-container {
+    .education-heading {
+      h4 {
+        margin-left: 2rem;
+      }
+    }
+
+    .education-content {
+      gap: 0;
+      flex-direction: column;
+
+      .leftedu-content {
+        .cllg-img {
+          margin-left: -60px;
+        }
+
+        .cllg-details {
+          margin-left: -45px;
+        }
+
+        .option-img {
+       
+          right: -11px;
+        }
+      }
+    }
+
+    .rightedu-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-left: 60px;
+      margin-top: -1.8rem;
+    }
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .education-container {
+  
+
+    .education-content {
+      
+
+      .leftedu-content {
+        
+
+        .option-img {
+          top: 14%;
+          right: 1px;
+        }
+      }
+    }
+
+
+  }
+}

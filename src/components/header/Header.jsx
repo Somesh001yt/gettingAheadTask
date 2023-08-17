@@ -1,13 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.scss";
 import Logo from "../../assests/logo.png";
 import Profile from "../../assests/profile.png";
 import { IonIcon } from "@ionic/react";
 import DropdownProfile from "../DropdownProfile";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [openprofile, setOpenprofile] = useState(false);
+
+  const closeDropdown = () => {
+    console.log("click");
+    setOpenprofile((prev) => !prev);
+  };
 
   return (
     <div className="container">
@@ -23,10 +29,14 @@ const Header = () => {
 
           <ul>
             <li className="header-list">
-              <a href="/">Home</a>
+              <NavLink activeClassName="active" to="/">
+                Home
+              </NavLink>
             </li>
             <li className="header-list">
-              <a href="/">Jobs</a>
+              <NavLink activeClassName="active" to="/jobs">
+                Jobs
+              </NavLink>
             </li>
             <li className="header-list">
               <a href="/">Search</a>
@@ -44,7 +54,10 @@ const Header = () => {
               <ion-icon name="caret-down-outline"></ion-icon>
             </div>
           </div>
-          <div className="image   mr-8 lg:mr-24">
+          <div
+            onClick={() => setOpenprofile((prev) => !prev)}
+            className="image   mr-8 lg:mr-24"
+          >
             <img src={Profile} alt="profile" />
           </div>
         </div>
@@ -56,10 +69,10 @@ const Header = () => {
           }`}
         >
           <li className=" text-center text-lg mb-8">
-            <a href="/">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className=" text-center text-lg mt-8">
-            <a href="/">Jobs</a>
+            <NavLink to="/jobs">Jobs</NavLink>
           </li>
           <li className=" text-center text-lg mt-8">
             <a href="/">Search</a>
@@ -67,7 +80,7 @@ const Header = () => {
         </ul>
       </div>
 
-      {openprofile && <DropdownProfile />}
+      {openprofile && <DropdownProfile closeFunction={() => closeDropdown()} />}
     </div>
   );
 };

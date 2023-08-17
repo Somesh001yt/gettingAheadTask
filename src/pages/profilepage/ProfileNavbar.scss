@@ -1,0 +1,40 @@
+.profilenav-container {
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      color: #193d59;
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 150%;
+
+      .active {
+        width: 10.875rem;
+        height: 4.1875rem;
+        border-radius: 1rem;
+        background-color: #e5ecff;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  .profilenav-container {
+    ul{
+      gap: 2rem;
+
+
+      li{
+        font-size: 1rem;
+      }
+    }
+  }
+  
+}

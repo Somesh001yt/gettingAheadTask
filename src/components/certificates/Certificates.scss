@@ -1,0 +1,35 @@
+.certificates-container{
+    width: 90%;
+    background-color: #fff;
+    height: 23.5rem;
+    border-radius: 1rem;
+  box-shadow: 20px 20px 50px 0px rgba(238, 241, 248, 0.5);
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+
+
+ .certificates-heading{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+
+    h4 {
+      color: #193d59;
+      font-size: 1.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      margin-left: 4rem;
+    }
+
+    img{
+        width: 2rem;
+      height: 2rem;
+      margin-right: 4rem; 
+      object-fit: contain;
+    }
+ }
+
+}
