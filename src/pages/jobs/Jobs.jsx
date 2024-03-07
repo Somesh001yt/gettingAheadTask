@@ -79,7 +79,7 @@ const Jobs = () => {
       </div>
       <button onClick={filterMenu} className='view-btn' >View all</button>
 
-      <RecommendedJobs/>
+      <RecommendedJobs/>   
     </div>
   )
 }

@@ -10,11 +10,6 @@ const DropdownProfile = (props) => {
     <div className='flex flex-col dropdownprofile  top-20 right-10 lg:right-28'>
       <ul className='flex flex-col gap-4'>
         <li>
-          <NavLink to="/profile-info" activeClassName="active-link">
-            Edit Profile
-          </NavLink>
-        </li>
-        <li>
         <NavLink to="/profile-page" activeClassName="active-link">
           Profile Page
         </NavLink>

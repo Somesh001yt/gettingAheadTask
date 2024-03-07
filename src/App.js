@@ -10,6 +10,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import Empeditinfo from "./components/editinfo/Empeditinfo";
 import ProfilePage from "./pages/profilepage/ProfilePage";
+import AuthPage from './components/AuthPage'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/profile-info" element={<ProfileInfo/>} />
         <Route path="/edit-info" element={<Empeditinfo/>} />
         <Route path="/profile-page" element={<ProfilePage/>} />
+        <Route path='/auth' element={<AuthPage/>}/>
       </Routes>
       <Footer/>
     </div>

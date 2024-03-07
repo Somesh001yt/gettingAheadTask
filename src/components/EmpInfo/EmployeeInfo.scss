@@ -1,6 +1,6 @@
 .emp-container {
   width: 580px;
-  height: 493px;
+  height: 33rem;
   background-color: #ffffff;
   border-radius: 16px;
   margin: 80px 0 0 72px;
@@ -17,11 +17,12 @@
   }
 }
 
-@media (max-width: "1300px") {
+@media (max-width: "1400px") {
   .emp-container {
-    width: 80%;
+    width: 75%;
     height: 50%;
-    margin: 40px auto;
+    margin-top: 40px ;
+    margin-left: 80px;
   }
 }
 @media (max-width: "600px") {

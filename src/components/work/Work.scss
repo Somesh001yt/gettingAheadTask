@@ -1,16 +1,15 @@
-.work-container{
-    width: 90%;
-    background-color: #fff;
-    height: 23.5rem;
-    border-radius: 1rem;
+.work-container {
+  width: 90%;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 1rem;
   box-shadow: 20px 20px 50px 0px rgba(238, 241, 248, 0.5);
   margin: 0 auto;
   margin-top: 4rem;
   margin-bottom: 50px;
   padding-bottom: 30px;
 
-
- .work-heading{
+  .work-heading {
     display: flex;
     justify-content: space-between;
     padding-top: 3rem;
@@ -24,12 +23,112 @@
       margin-left: 4rem;
     }
 
-    img{
-        width: 2rem;
+    img {
+      width: 2rem;
       height: 2rem;
-      margin-right: 4rem; 
+      margin-right: 4rem;
       object-fit: contain;
     }
- }
+  }
 
+  .work-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    .work-leftSide {
+      display: flex;
+      gap: 1rem;
+      margin-left: 3.5rem;
+      margin-top: 1rem;
+
+      .apple-img {
+        width: 4.125rem;
+        height: 4.125rem;
+        border-radius: 50%;
+      }
+
+      .leftSide-details {
+        h6 {
+          font-size: 1.125rem;
+          font-weight: 600;
+          line-height: 150%;
+        }
+
+        p {
+          color: #8e979e;
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+    }
+
+    .work-rightSide {
+      .option-img {
+        margin-right: 4rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .work-description {
+    width: 80%;
+    margin-left: 8.7rem;
+   margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+
+@media (max-width: 950px) {
+  .work-container{
+
+
+    .work-description{
+      width: 65%;
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  .work-container{
+
+
+    .work-description{
+      width: 70%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .work-container{
+
+    .work-heading{
+      h4{
+        margin-left: 1rem;
+      }
+
+      img{
+        margin-right: 1rem;
+      }
+    }
+
+    .work-content{
+      .work-leftSide{
+        margin-left: 1.2rem;
+      }
+
+      .work-rightSide .option-img{
+        margin-right: 1rem;
+      }
+    }
+
+
+    .work-description{
+      width: 60%;
+      margin-left: 6.4rem;
+    }
+  }
 }

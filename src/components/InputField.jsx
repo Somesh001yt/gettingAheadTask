@@ -11,7 +11,7 @@ const InputField = ({label , type, value , onChange , name, error, width}) => {
     </label>
     <div className='flex flex-col  relative'>
     <input
-        className=' w-[90%] md:w-[22.6rem] lg:w-[32rem] mx-auto lg:mx-0 h-12 lg:h-14 rounded-2xl relative  bg-primary p-2'
+        className=' w-[90%] md:w-[40vw] lg:w-[32rem] mx-auto lg:mx-0 h-12 lg:h-14 rounded-2xl relative  bg-primary p-2'
         width={width}
        type= { type}
        value={value}

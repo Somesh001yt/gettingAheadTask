@@ -15,15 +15,23 @@
 
   
 
-    li {
-      height: 50px;
+    .simple {
+      color: #193d59;
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 150%;
+      cursor: pointer;
   }
 
-  .nav-link {
-    color: blue;
-    &.inactive {
-      color: black;
-    }
+  .active {
+    width: 10.875rem;
+    height: 4.1875rem;
+    border-radius: 1rem;
+    background-color: #e5ecff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 
   

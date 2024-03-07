@@ -9,30 +9,25 @@ import Mail from "../../assests/envelope.png";
 
 
 import "./EmployeeInfo.scss";
-import EditEmployee from "./EditEmployee";
 import Techpage from "../tech/Techpage";
+import { NavLink } from "react-router-dom";
 
 
 const EmployeeInfo = () => {
-
-  const [openprofile, setOpenprofile] = useState(false);
-  const closeDropdown = () =>{
-    console.log('click')
-    setOpenprofile((prev) => !prev)
-  }
-
   return (
     <div className="emp-container">
       <div className="flex justify-between mx-auto">
         <h1 className="mt-10 ml-8 text-2xl font-semibold text-blue ">
           Employer info
         </h1>
-        <img
+       
+          <NavLink to="/edit-info" activeClassName="active-link">
+          <img
           className=" mt-10 mr-10 object-contain overflow-hidden"
           src={Pencil}
           alt="pen"
-          onClick={() => setOpenprofile((prev) => !prev)}
         />
+        </NavLink>
       </div>
 
       <div className="flex">
@@ -75,7 +70,7 @@ const EmployeeInfo = () => {
 
       <Techpage />
       
-      {openprofile && <EditEmployee  closeFunction={()=>closeDropdown()} />}
+
     </div>
   );
 };

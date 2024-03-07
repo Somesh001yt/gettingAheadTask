@@ -9,9 +9,9 @@ const Techpage = () => {
           return (
             <div
               key={index}
-              className="bg-gray w-[67px] h-[34px] ml-1 rounded-2xl  mt-6 inline-block"
+              className="bg-[#B5C0C9] w-[67px] h-[34px] ml-1 rounded-2xl  mt-6 inline-block"
             >
-              <p className="pt-2 pl-5 text-sm">{item.heading}</p>
+              <p className="flex justify-center pt-[6px] text-sm">{item.heading}</p>
             </div>
           );
         })}

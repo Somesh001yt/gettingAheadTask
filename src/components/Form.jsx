@@ -23,9 +23,9 @@ const Form = () => {
       console.log(values);
     },
   });
-//   console.log(
-//     errors
-//   )
+  console.log(
+     errors
+   )
 
   //   console.log(Formik)
 

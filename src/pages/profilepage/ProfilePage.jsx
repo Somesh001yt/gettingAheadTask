@@ -7,6 +7,9 @@ import Linkedin from '../../assests/linkedin.png'
 import Github from '../../assests/Group.png'
 import Techpage from '../../components/tech/Techpage'
 import ProfileNavbar from './ProfileNavbar'
+import { NavLink } from 'react-router-dom'
+import Pencil from '../../assests/pencil.png'
+
 
 const ProfilePage = () => {
   return (
@@ -15,7 +18,13 @@ const ProfilePage = () => {
         <div className='profilepage-heading'>
             <h4>Profile info</h4>
           <div className='pencil-icon'>
-            <ion-icon name="pencil-sharp"></ion-icon>
+          <NavLink to="/profile-info" activeClassName="active-link">
+          <img
+          className=" mt-2  mr-10 object-contain overflow-hidden"
+          src={Pencil}
+          alt="pen"
+        />
+          </NavLink>
           </div>
         </div>
 {/*  content */}
@@ -35,6 +44,7 @@ const ProfilePage = () => {
           </div>
             </div>
         </div>
+
 
         <div className='profile-details'>
          <h4>Jane Dae</h4>
